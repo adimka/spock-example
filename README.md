@@ -1,8 +1,10 @@
 # spock-workshop
 Spock workshop with a ready to go Maven build for Spock Tech Session
 
-Complete the TODO's in src/test/groovy/SpockWorkshop.groovy to get the hang of Spock.
+Complete the TODO's in src/test/groovy/AdventureService.groovy and src/test/groovy/AdventurerSpec.groovy to get the hang of writing and interpreting Spock specifications
 
-A "mvn clean test" from the project root directory will run your Spock tests.
+The classes being tested are available in src/main/groovy/
+
+A "mvn clean test" from the project root directory will run your Spock tests
 
 My (potentially sub-optimal) solutions are available in SpockWorkshopSols.g
