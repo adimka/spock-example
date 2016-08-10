@@ -31,6 +31,22 @@
           </execution>
         </executions>
       </plugin>
+	  <!-- Plugin for Groovy compiliation -->
+      <plugin>
+		<groupId>org.codehaus.gmavenplus</groupId>
+		<artifactId>gmavenplus-plugin</artifactId>
+		<version>1.5</version>
+		<executions>
+		  <execution>
+		    <goals>
+		      <goal>addSources</goal>
+		      <goal>addTestSources</goal>
+			  <goal>compile</goal>
+			  <goal>testCompile</goal>
+			</goals>
+		  </execution>
+		</executions>
+	  </plugin>
       <!-- Optional plugins for using Spock -->
       <!-- Only required if names of spec classes don't match default Surefire patterns (`*Test` etc.) -->
       <plugin>
@@ -75,6 +91,11 @@
       <version>2.1</version>
       <scope>test</scope>
     </dependency>
+	<dependency>
+	  <groupId>org.codehaus.groovy</groupId>
+	  <artifactId>groovy-all</artifactId>
+	  <version>2.4.1</version>
+	</dependency>
   </dependencies>
 
   <repositories>
