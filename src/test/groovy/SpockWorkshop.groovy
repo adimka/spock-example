@@ -5,6 +5,7 @@ import spock.lang.*
 	looks like.
 */
 class AdventureServiceSpec extends Specification {
+    // TODO: Play with asserts to see how Spock failure output looks
     @Unroll
 	def "adventure service produces #x valid adventures"(int x) {
     	setup:
