@@ -1,4 +1,6 @@
 # All directories should end in / (information used by ide.gradle)
+# VIM
+*~
 
 # Ant
 ant/

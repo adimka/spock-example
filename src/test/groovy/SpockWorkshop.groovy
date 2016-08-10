@@ -1,6 +1,6 @@
 import spock.lang.*
 
-/* 	An example specification testing our AdventureService class
+/* 	An example specification testing our AdventureService class.
    	change the assertions to see what unrolled feature method output
 	looks like.
 */
@@ -44,7 +44,7 @@ class AdventurerSpec extends Specification {
 
   	}
 
-  	def "selling treasure generates gold and prints items sold"(int x){
+  	def "selling treasure generates gold and prints #x items sold"(int x){
     // TODO: Implement this feature method using a data pipe to test different amounts of loot
 	
   	}
@@ -81,7 +81,7 @@ class Adventurer {
   		items = []
   	}
 
-  	//Takes an adventure and puts its loot in our items
+  	//Takes an adventureServive which generates and adventure whose loot in our items
   	def findTreasure(AdventureService adv){
 		def a = adv.create()
     	items += a.loot
@@ -127,7 +127,7 @@ class Adventurer {
 		}
 	}
 	
-	private void faint(){
+	def faint(){
 		println "You have fainted and lost all your possessions!"
 		gold = 0
 		items = []
@@ -181,6 +181,8 @@ class AdventureService {
 }
 
 class Adventure {
+	def title
+	def description
   	List<Treasure> loot
 }
 
@@ -193,10 +195,6 @@ class Treasure {
   	int value
 }
 
-class NoPotionException extends Exception{
+class NoPotionException extends Exception {}
 
-}
-
-class CannotHealMoreException extends Exception {
-
-}
+class CannotHealMoreException extends Exception {}
