@@ -7,4 +7,4 @@ The classes being tested are available in src/main/groovy/
 
 A "mvn clean test" from the project root directory will run your Spock tests
 
-My (potentially sub-optimal) solutions are available in SpockWorkshopSols.g
+My solutions are available in SpockWorkshopSols.g
